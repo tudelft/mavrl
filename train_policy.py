@@ -15,6 +15,7 @@ from mav_baselines.torch.recurrent_ppo.ppo_recurrent import RecurrentPPO
 
 from mav_baselines.torch.envs import vec_multi_env_wrapper as wrapper
 from mav_baselines.torch.common.util import test_vision_policy
+sys.modules['rpg_baselines_prev'] = mav_baselines
 unity_ready = False
 save_finished = False
 def configure_random_seed(seed, env=None):
